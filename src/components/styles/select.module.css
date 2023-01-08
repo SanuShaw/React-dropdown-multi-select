@@ -1,0 +1,130 @@
+.container {
+    position: relative;
+    width: 20em;
+    min-height: 1.5em;
+    border: .05em solid #777;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    padding: .5em;
+    border-radius: .25em;
+    outline: none;
+    margin: 2rem;
+}
+
+.container:focus {
+    border-color: hsl(200, 100%, 50%);
+}
+
+.value {
+    flex-grow: 1;
+}
+
+.clear-btn {
+    background: none;
+    color: #777;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.25em;
+    transition: .3s all;
+}
+
+.clear-btn:focus,
+.clear-btn:hover {
+    color: #333;
+    font-size: 1.35em;
+}
+
+.divider {
+    background-color: #777;
+    align-self: stretch;
+    width: .05em;
+}
+
+.caret {
+    border: .35em solid transparent;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.caret_open {
+    translate: 0 25%;
+    border-top-color: #777;
+}
+
+.caret_close {
+    translate: 0 -25%;
+    border-bottom-color: #777;
+}
+
+.options {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    max-height: 15em;
+    overflow-y: auto;
+    border: .05em solid #777;
+    border-radius: .3;
+    width: 100%;
+    left: 0;
+    top: calc(100% + .25em);
+    background-color: white;
+    z-index: 100;
+}
+
+.show {
+    display: block;
+}
+
+.option {
+    padding: .25em .5em;
+    cursor: pointer;
+}
+
+.value {
+    flex-grow: 1;
+    display: flex;
+    gap: .5em;
+    flex-wrap: wrap;
+}
+
+.option.selected {
+    background-color: hsl(200, 100%, 70%);
+}
+
+.option.highlighted {
+    background-color: hsl(200, 100%, 50%);
+    color: white
+}
+
+.option_badge {
+    display: flex;
+    align-items: center;
+    border: .05em solid #7d5cb6;
+    border-radius: .25em;
+    padding: .15em .25em;
+    gap: .25em;
+    cursor: pointer;
+    background: none;
+    outline: none;
+}
+
+.option_badge:hover,
+.option_badge:focus {
+    background-color: hsl(0, 76%, 97%);
+    border-color: hsl(0, 100%, 50%);
+}
+
+.option_badge:hover>.remove-btn,
+.option_badge:focus>.remove-btn {
+    color: hsl(0, 100%, 50%);
+}
+
+.option_badge>.remove-btn {
+    font-size: 1.25em;
+    color: #777;
+}
