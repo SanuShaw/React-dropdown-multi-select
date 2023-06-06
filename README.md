@@ -18,12 +18,12 @@ This is a sample project demonstrating how to create a multi-select and single-s
 2. Navigate to the project directory:
 
    ```bash
-cd React-dropdown-multi-select
+   cd React-dropdown-multi-select
 3. Install dependencies:
-4. 
+
    ```bash
-npm install
+   npm install
 4. Start the development server:
 
    ```bash
-npm run dev
+   npm run dev
